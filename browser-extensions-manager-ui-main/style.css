@@ -25,15 +25,15 @@ header{
 }
 #extensions {
     margin-top:32px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
-    
 }
 .buttonItems{
     display:flex;
     gap:7px;
     position: relative;
-    
+    top: 31px;
 }
 #extensions .buttonItems button:hover{
     background:hsl(3, 77%, 44%);
@@ -47,11 +47,11 @@ header{
   padding: 0px 20px 0 20px;
   background: #ffff;
 }
-
 #extensions h1{
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
-  font-size: larger;
+  font-size:39px;
+ 
 } 
 .filtertext{
   font-family: "Figtree", sans-serif;
