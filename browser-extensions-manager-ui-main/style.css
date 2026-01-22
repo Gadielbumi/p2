@@ -1,16 +1,16 @@
 body{
     background:rgb(129, 127, 255);
+    margin: 35px 70px 10px 70px;
 }
 header{
     display: flex;
     justify-content: space-between;
-    margin: 35px 70px 10px 70px;
+    margin: 0px 0px 20px 0px;
     padding: 6px;
     background: #ffff;
 
     border-radius: 15px;
 }
-
 #sun{ 
     height: 40px;
     width: 40px; 
@@ -22,5 +22,8 @@ header{
 .logo{
     height:35px; 
     padding :5px
+}
+#extensions h1{
+    font-family: ;
 }
 
