@@ -41,7 +41,7 @@ header{
     display:flex;
     gap:7px;
     position: relative;
-    top: 31px;
+    top: 20px;
 }
 #extensions .buttonItems button:hover{
     background:hsl(3, 77%, 44%);
@@ -63,8 +63,31 @@ header{
 #extensions h1{
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
-  font-size:39px;
+  font-size:33px;
  
 } 
 
+/* debut des block extention */
+
+.extensionBlock{
+    height: 200px;
+    width: 400px;
+    border:0.5px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffff;
+    margin: 10px;
+    padding:10px;
+}
+.extensionBlock img {
+    
+}
+.title{
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  position: relative;
+
+}
+.description{
+
+}
 
