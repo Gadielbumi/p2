@@ -23,11 +23,16 @@ header{
     height:35px; 
     padding :5px
 }
+/* debut de la section filtre */
+
 #extensions {
     margin-top:32px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
 }
 .buttonItems{
     display:flex;
@@ -47,16 +52,16 @@ header{
   padding: 0px 20px 0 20px;
   background: #ffff;
 }
+.filtertext{
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto; 
+  font-size:larger;
+}
 #extensions h1{
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-size:39px;
  
 } 
-.filtertext{
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto; 
-  font-size:larger;
-}
 
 
