@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <script src="basics.js" defer></script>
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -25,9 +29,9 @@
   <section id="extensions">
     <h1>Extensions List</h1>
     <div class="buttonItems">
-      <button ><span class="filtertext">All</span></button>
-      <button ><span class="filtertext">Active</span></button>
-      <button ><span class="filtertext">Inactive</span></button>
+      <button id="All"><span class="filtertext">All</span></button>
+      <button id="Active"><span class="filtertext">Active</span></button>
+      <button id="Inactive"><span class="filtertext">Inactive</span></button>
     </div>
   </section>
   <section id="extensionsList">
@@ -35,8 +39,14 @@
       <img src="./assets/images/logo-console-plus.svg" alt="image console" title="ConsolPlus">
       <h2 class="title">ConsolPlus</h2>
       <p class="description">Enhanced developer console with advanced filtering and logging.</p>
-      <button class="remove">remove</button>
-      <input type="checkbox" id="check"><label for="check"></label>
+      <div class="fouter">
+          <button class="remove">Remove</button>
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+          </label>
+
+      </div>
     </div>
   </section> 
 </body>

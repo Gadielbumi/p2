@@ -81,8 +81,8 @@ header{
     position: absolute;
 }
 .extensionBlock{
-    height: 200px;
-    width: 400px;
+    height: 150px;
+    width: 350px;
     border:0.5px solid #ffffff;
     border-radius: 15px;
     background-color: #ffff;
@@ -107,6 +107,70 @@ header{
 
 }
 .description{
-
+  height:auto ;
+  position:relative;
+  top:-3.3em;
+  left:4.3em;
+  width:17em ;
+  font-family:"Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-size:17px;
+  opacity: 0.7;
+}
+.fouter{
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    bottom:2.5em;
+}
+.remove{
+    height:2.5em;
+    width:6em;
+    border-radius:20px;
+    border:0.5px solid rgba(25, 24, 24, 0.691);
+    position: relative;
+    background-color: #ffff;
+    
+    font-weight: 550;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
 }
 
+.switch{
+    position: relative;
+    right:1em;
+    top: 7px;
+    height: 20px;
+    width:37px;
+    display: inline-block;
+}
+.switch input{
+    display: none;
+}
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.slider::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+input:checked + .slider{
+    background:hsl(3, 77%, 44%) ;
+}
+input:checked + .slider::before{
+    transform: translateX(16px);
+}
