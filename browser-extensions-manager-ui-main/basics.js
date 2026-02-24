@@ -3,7 +3,8 @@
 // sun.addEventListener("click",() => {
 //     alert("ca fonctionne ")
 // })
-function changementState(){
+function changementDuMode(){
+
     const src1 = "./assets/images/icon-moon.svg" 
     const src2 = "./assets/images/icon-sun.svg"
     let toggle =  true
@@ -12,15 +13,15 @@ function changementState(){
     button.addEventListener("click", ()=>{
         if (toggle){
             img.src = src2
-            document.body.style.backgroundColor = "#0a1a3a"
-            document.header.style.backgroundColor ="#708090"
+            document.body.classList.toggle("dark")
             toggle = !toggle
         }
-        else{
-            img.src = src1
-            document.body.style.backgroundColor = "#ffff";
+       else{
+            img.src = src1  
+            document.body.classList.toggle("dark")
             toggle = !toggle
         }     
     })
 }
-changementState()
+//begining of the filter part 
+changementDuMode()
